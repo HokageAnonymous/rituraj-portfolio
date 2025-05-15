@@ -84,8 +84,3 @@
   pointer-events: none;
 }
 
-@media (max-width: 1300px){
-  header{
-    padding: 1rem 0.5rem;
-  }
-
