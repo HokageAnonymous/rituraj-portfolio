@@ -51,7 +51,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="border border-border/50 bg-card/30 backdrop-blur-sm hover:border-primary/20 transition-all duration-300"
+              className="border border-border/50 bg-card/30 backdrop-blur-sm hover:border-primary/20 transition-all duration-300 hover:scale-105 transform"
             >
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
