@@ -84,7 +84,7 @@
   pointer-events: none;
 }
 #spline-background {
-  position: fixed; /* or absolute */
+  position: absolute; /* or absolute */
   top: 0;
   left: 0;
   width: 100vw;
