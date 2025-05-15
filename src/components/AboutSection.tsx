@@ -9,7 +9,7 @@ const AboutSection = () => {
     },
     {
       category: "Backend",
-      technologies: ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+      technologies: ["Node.js", "Express", "PostgreSQL", "MongoDB", "MySQL"]
     },
     {
       category: "Tools",
@@ -27,15 +27,10 @@ const AboutSection = () => {
             <h2 className="mb-6">About Me</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a passionate software engineer with over 5 years of experience building web applications and services.
-                My journey in tech started with a curiosity about how things work, which led me to explore the world of programming.
+                Computer Science and Engineering student at Birla Institute of Technology, Mesra, with a solid foundation in programming, data structures, and algorithms. Passionate about gaming, having spent extensive hours honing strategic thinking and problem-solving skills through competitive play as a self-proclaimed professional gamer.
               </p>
               <p>
-                I specialize in creating robust and scalable applications, with a focus on clean code, performance, and user experience.
-                Whether it's frontend, backend, or full-stack development, I enjoy tackling challenging problems and delivering high-quality solutions.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.
+                Eager to apply both technical knowledge and gaming-derived skills to real-world projects through internships in the tech industry.
               </p>
             </div>
           </div>
@@ -46,12 +41,12 @@ const AboutSection = () => {
               {skills.map((skill) => (
                 <Card key={skill.category} className="border border-border/50 bg-secondary/20 backdrop-blur-sm">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">{skill.category}</CardTitle>
+                    <CardTitle className="text-lg glow-text">{skill.category}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-1 text-sm text-muted-foreground">
                       {skill.technologies.map((tech) => (
-                        <li key={tech}>{tech}</li>
+                        <li key={tech} className="glitch-text">{tech}</li>
                       ))}
                     </ul>
                   </CardContent>

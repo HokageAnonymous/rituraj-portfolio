@@ -32,7 +32,7 @@ const HeroSection = () => {
             Hello, I'm
           </p>
           <h1 className="font-bold mb-4 opacity-0 animate-fade-down" style={{ animationDelay: '400ms' }}>
-            Jakub Žitník
+            Rituraj Kanchan
           </h1>
           <div className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 opacity-0 animate-fade-down" style={{ animationDelay: '600ms' }}>
             <span>{typedText}</span>
@@ -43,13 +43,13 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center opacity-0 animate-fade-up" style={{ animationDelay: '1000ms' }}>
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="button-glow">
               <a href="#projects">
                 My Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="outline" size="lg" asChild className="button-glow">
               <a href="#contact">Get in Touch</a>
             </Button>
           </div>
