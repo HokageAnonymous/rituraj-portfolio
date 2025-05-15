@@ -83,4 +83,21 @@
   z-index: 0;
   pointer-events: none;
 }
+#spline-background {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  background-color: transparent; /* optional, for clean stacking */
+}
+
 
