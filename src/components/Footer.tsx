@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Jakub Žitník. All rights reserved.
+              &copy; {new Date().getFullYear()} Rituraj Kanchan. All rights reserved.
             </p>
           </div>
           
