@@ -41,12 +41,12 @@ const AboutSection = () => {
               {skills.map((skill) => (
                 <Card key={skill.category} className="border border-border/50 bg-secondary/20 backdrop-blur-sm">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg glow-text">{skill.category}</CardTitle>
+                    <CardTitle className="text-lg tech-category-glow">{skill.category}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-1 text-sm text-muted-foreground">
                       {skill.technologies.map((tech) => (
-                        <li key={tech} className="glitch-text">{tech}</li>
+                        <li key={tech} className="tech-item">{tech}</li>
                       ))}
                     </ul>
                   </CardContent>
