@@ -73,3 +73,7 @@
     @apply bg-gradient-to-b from-transparent via-background to-background;
   }
 }
+.spline{
+  position: absolute;
+  top: 0;
+}
