@@ -100,4 +100,7 @@
   background-color: transparent; /* optional, for clean stacking */
 }
 
-
+button, h1, .main-content {
+  position: relative;
+  z-index: 2;
+}
