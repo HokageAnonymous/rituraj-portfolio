@@ -55,8 +55,12 @@ const ContactSection = () => {
       if (response.ok) {
         toast({
           title: "Message sent successfully!",
-          description: "Thanks for reaching out. I'll get back to you soon.",
-          icon: <CheckCircle className="h-5 w-5 text-green-500" />
+          description: (
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-green-500" />
+              <span>Thanks for reaching out. I'll get back to you soon.</span>
+            </div>
+          )
         });
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
@@ -65,9 +69,13 @@ const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Message failed to send",
-        description: "Please try again later or contact directly via email.",
-        variant: "destructive",
-        icon: <AlertCircle className="h-5 w-5" />
+        description: (
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-5 w-5 text-destructive" />
+            <span>Please try again later or contact directly via email.</span>
+          </div>
+        ),
+        variant: "destructive"
       });
       console.error("Error sending email:", error);
     } finally {
