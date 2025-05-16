@@ -1,11 +1,80 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, MessageSquare, Send } from "lucide-react";
+import { Mail, MessageSquare, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // EmailJS configuration
+      const serviceId = "service_x78ylhb";
+      const templateId = "template_xeob12n";
+      const publicKey = "mJNjoHw7fy91OVP6t";
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      };
+
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: serviceId,
+          template_id: templateId,
+          user_id: publicKey,
+          template_params: templateParams,
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thanks for reaching out. I'll get back to you soon.",
+          icon: <CheckCircle className="h-5 w-5 text-green-500" />
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      toast({
+        title: "Message failed to send",
+        description: "Please try again later or contact directly via email.",
+        variant: "destructive",
+        icon: <AlertCircle className="h-5 w-5" />
+      });
+      console.error("Error sending email:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#06b6d4,transparent 70%)] opacity-10" />
@@ -21,7 +90,7 @@ const ContactSection = () => {
           
           <Card className="border border-border/50 bg-secondary/5 backdrop-blur-sm">
             <CardContent className="p-6">
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
@@ -29,8 +98,11 @@ const ContactSection = () => {
                     </label>
                     <Input 
                       id="name" 
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Your name" 
                       className="bg-background/50 border-border/50"
+                      required
                     />
                   </div>
                   
@@ -41,8 +113,11 @@ const ContactSection = () => {
                     <Input 
                       id="email" 
                       type="email" 
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="your.email@example.com" 
                       className="bg-background/50 border-border/50"
+                      required
                     />
                   </div>
                 </div>
@@ -52,9 +127,12 @@ const ContactSection = () => {
                     Subject
                   </label>
                   <Input 
-                    id="subject" 
+                    id="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     placeholder="What is this regarding?" 
                     className="bg-background/50 border-border/50"
+                    required
                   />
                 </div>
                 
@@ -64,15 +142,26 @@ const ContactSection = () => {
                   </label>
                   <Textarea 
                     id="message" 
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Your message" 
                     rows={6}
                     className="bg-background/50 border-border/50"
+                    required
                   />
                 </div>
                 
-                <Button type="submit" className="w-full sm:w-auto">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
+                <Button type="submit" className="w-full sm:w-auto" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <span className="animate-pulse mr-2">Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>
