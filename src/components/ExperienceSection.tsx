@@ -14,7 +14,24 @@ const ExperienceSection = () => {
           </p>
         </div>
         
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <Card className="border border-border/50 bg-card/30 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle>Video Editor (Freelance)</CardTitle>
+              <CardDescription className="text-muted-foreground font-medium">
+                Self-Initiated | 2024 – Present
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                <li>Edited various personal and family videos using DaVinci Resolve, focusing on visual storytelling, pacing, and sound design.</li>
+                <li>Delivered polished final cuts tailored to the preferences of friends and relatives for events, montages, and personal milestones.</li>
+                <li>Learned and applied advanced editing features such as color grading, keyframing, transitions, and titles.</li>
+                <li>Collaborated informally with others to understand creative vision and meet expectations without any commercial compensation.</li>
+              </ul>
+            </CardContent>
+          </Card>
+          
           <Card className="border border-border/50 bg-card/30 backdrop-blur-sm">
             <CardHeader>
               <CardTitle>PC Hardware Specialist (Freelance)</CardTitle>
