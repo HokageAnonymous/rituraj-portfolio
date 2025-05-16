@@ -63,7 +63,7 @@ const technologies: Technology[] = [
   {
     name: "C++",
     logoUrl: "https://cdn.simpleicons.org/cplusplus/00599C",
-  }
+  },
 ];
 
 const TechSlider = () => {
