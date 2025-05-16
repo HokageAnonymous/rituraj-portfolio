@@ -10,59 +10,59 @@ type Technology = {
 const technologies: Technology[] = [
   {
     name: "React",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/react/61DAFB",
   },
   {
-    name: "Vue",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    name: "Vue.js",
+    logoUrl: "https://cdn.simpleicons.org/vuedotjs/4FC08D",
   },
   {
     name: "TypeScript",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/typescript/3178C6",
   },
   {
     name: "Tailwind CSS",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    logoUrl: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
   },
   {
     name: "Node.js",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/nodedotjs/339933",
   },
   {
     name: "Express",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/express/000000",
   },
   {
     name: "PostgreSQL",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/postgresql/4169E1",
   },
   {
     name: "MongoDB",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/mongodb/47A248",
   },
   {
     name: "MySQL",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/mysql/4479A1",
   },
   {
     name: "Git",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/git/F05032",
   },
   {
     name: "GitHub",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/github/181717",
   },
   {
     name: "Docker",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/docker/2496ED",
   },
   {
     name: "C",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/c/00599C",
   },
   {
     name: "C++",
-    logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    logoUrl: "https://cdn.simpleicons.org/cplusplus/00599C",
   },
   {
     name: "FreeCodeCamp",
