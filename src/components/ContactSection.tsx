@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, MessageSquare, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, MessageSquare, Send, CheckCircle, AlertCircle, Instagram, Linkedin, Github } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
@@ -196,9 +196,21 @@ const ContactSection = () => {
                 <div>
                   <h3 className="text-lg font-semibold">Social</h3>
                   <div className="flex space-x-3 mt-1">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">LinkedIn</a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">GitHub</a>
+                    <a href="https://www.instagram.com/anonymouzwastaken" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <span className="flex items-center gap-1">
+                        <Instagram className="h-4 w-4" /> Instagram
+                      </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rituraj-kanchan-435b46312" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <span className="flex items-center gap-1">
+                        <Linkedin className="h-4 w-4" /> LinkedIn
+                      </span>
+                    </a>
+                    <a href="https://github.com/HokageAnonymous" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <span className="flex items-center gap-1">
+                        <Github className="h-4 w-4" /> GitHub
+                      </span>
+                    </a>
                   </div>
                 </div>
               </CardContent>
