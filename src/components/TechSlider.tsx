@@ -63,15 +63,7 @@ const technologies: Technology[] = [
   {
     name: "C++",
     logoUrl: "https://cdn.simpleicons.org/cplusplus/00599C",
-  },
-  {
-    name: "FreeCodeCamp",
-    logoUrl: "https://cdn.worldvectorlogo.com/logos/freecodecamp.svg",
-  },
-  {
-    name: "NordVPN",
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/NordVPN_logo.svg/2560px-NordVPN_logo.svg.png",
-  },
+  }
 ];
 
 const TechSlider = () => {
