@@ -10,59 +10,59 @@ type Technology = {
 const technologies: Technology[] = [
   {
     name: "React",
-    logoUrl: "https://cdn.simpleicons.org/react/61DAFB",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg",
   },
   {
     name: "Vue.js",
-    logoUrl: "https://cdn.simpleicons.org/vuedotjs/4FC08D",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vuedotjs.svg",
   },
   {
     name: "TypeScript",
-    logoUrl: "https://cdn.simpleicons.org/typescript/3178C6",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/typescript.svg",
   },
   {
     name: "Tailwind CSS",
-    logoUrl: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tailwindcss.svg",
   },
   {
     name: "Node.js",
-    logoUrl: "https://cdn.simpleicons.org/nodedotjs/339933",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nodedotjs.svg",
   },
   {
     name: "Express",
-    logoUrl: "https://cdn.simpleicons.org/express/000000",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/express.svg",
   },
   {
     name: "PostgreSQL",
-    logoUrl: "https://cdn.simpleicons.org/postgresql/4169E1",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postgresql.svg",
   },
   {
     name: "MongoDB",
-    logoUrl: "https://cdn.simpleicons.org/mongodb/47A248",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg",
   },
   {
     name: "MySQL",
-    logoUrl: "https://cdn.simpleicons.org/mysql/4479A1",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg",
   },
   {
     name: "Git",
-    logoUrl: "https://cdn.simpleicons.org/git/F05032",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg",
   },
   {
     name: "GitHub",
-    logoUrl: "https://cdn.simpleicons.org/github/181717",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg",
   },
   {
     name: "Docker",
-    logoUrl: "https://cdn.simpleicons.org/docker/2496ED",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/docker.svg",
   },
   {
     name: "C",
-    logoUrl: "https://cdn.simpleicons.org/c/00599C",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/c.svg",
   },
   {
     name: "C++",
-    logoUrl: "https://cdn.simpleicons.org/cplusplus/00599C",
+    logoUrl: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cplusplus.svg",
   },
 ];
 
