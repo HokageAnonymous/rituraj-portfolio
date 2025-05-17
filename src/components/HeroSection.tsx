@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const textToType = "Software Engineer";
+  const textToType = "Technician and Self-Proclaimed Gamer";
   
   useEffect(() => {
     let currentIndex = 0;
@@ -39,7 +39,8 @@ const HeroSection = () => {
             <span className={`inline-block w-0.5 h-6 ml-1 bg-current ${showCursor ? 'animate-blink' : 'opacity-0'}`}></span>
           </div>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto opacity-0 animate-fade-up" style={{ animationDelay: '800ms' }}>
-            I create elegant solutions to complex problems with code. Specialized in building modern web applications.
+            I tinker with systems, and sometimes break things just to fix them better.
+            I do what I love — turning ideas into clean, functional code.
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center opacity-0 animate-fade-up" style={{ animationDelay: '1000ms' }}>
